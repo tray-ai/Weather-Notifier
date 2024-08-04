@@ -1,6 +1,7 @@
 # Weather-Notifier
 WeatherNotifier
 weather.py:
+
 This is a Python script that retrieves and displays weather information for Biloxi, MS, USA using the OpenWeatherMap API. It fetches current weather data, processes the information, and sends notifications via the Pushover app twice a day.
 
 Features:
@@ -26,9 +27,11 @@ Dependencies:
 - Custom module: email_mod
 
 email_mod.py:
+
 This module facilitates sending notifications to your phone via the Pushover app. It utilizes SMTP to send email or text messages at scheduled times, as defined in the weather.py program. The module securely connects to a Gmail SMTP server, authenticates using credentials from environment variables, and delivers notifications to the address specified in the .env file.
 
 .env.example:
+
 This file serves as a template for configuring environment variables required by the project. It includes placeholders for:
 
 - API_KEY: Your OpenWeather API key for accessing weather data.
